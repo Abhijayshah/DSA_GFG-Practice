@@ -1,0 +1,10 @@
+Matrix  Spiral traversal on a Matrix
+Matrix	Search an element in a matriix
+Matrix	Find median in a row wise sorted matrix
+Matrix	Find row with maximum no. of 1's
+Matrix	Print elements in sorted order using row-column wise sorted matrix
+Matrix	Maximum size rectangle
+Matrix	Find a specific pair in matrix
+Matrix	Rotate matrix by 90 degrees
+Matrix	Kth smallest element in a row-cpumn wise sorted matrix
+Matrix	Common elements in all rows of a given matrix
