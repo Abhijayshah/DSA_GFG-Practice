@@ -1,43 +1,31 @@
 class Solution {
   public:
-    int closestNumber(int n, int m) {
-    // Find integer quotient when n is divided by m
-    int q = n / m; // For example, if n = 13, m = 4 => q = 3
+  // Function to find the closest number to n that is divisible by m
+int closestNumber(int n, int m) {
+    
+    int closest = 0;               // This will store the current closest number divisible by m
+    int minDifference = INT_MAX;   // Initialize to a large value so that any real difference will be smaller
 
-    // First possible closest multiple (just below or equal to n)
-    int n1 = m * q; // For example, 4 * 3 = 12
+    // Loop through numbers in range [n - abs(m), n + abs(m)]
+    // We check a small range around n to find possible divisible numbers
+    for (int i = n - abs(m); i <= n + abs(m); ++i) {
+        
+        if (i % m == 0) {  // Check if i is divisible by m
 
-    // Second possible closest multiple (just above or below, depending on sign)
-    int n2;
+            int difference = abs(n - i); // Find how far i is from n
 
-    // Check sign of n and m
-    // If n and m have the same sign, we move forward (q + 1)
-    // Example: n = 13, m = 4 => n * m = 52 > 0 ⇒ n2 = 4 * (3 + 1) = 16
-    if (n * m > 0) {
-        n2 = m * (q + 1);
-    }
-    // If n and m have opposite signs, we move backward (q - 1)
-    // Example: n = -15, m = 6 => n * m = -90 < 0 ⇒ n2 = 6 * ( -3 - 1 ) = -24
-    else {
-        n2 = m * (q - 1);
-    }
-
-    // Check which multiple is closer to n
-    if (abs(n - n1) < abs(n - n2)) {
-        // n1 is closer
-        return n1;
-    }
-    if (abs(n - n1) > abs(n - n2)) {
-        // n2 is closer
-        return n2;
+            // Check if this i is closer to n than our current "closest"
+            // OR if it has the same distance but larger absolute value
+            if (difference < minDifference || 
+               (difference == minDifference && abs(i) > abs(closest))) {
+                
+                closest = i;            // Update closest number
+                minDifference = difference;  // Update minimum difference
+            }
+        }
     }
 
-    // If both are equally close, choose the one with greater absolute value
-    if (abs(n1) > abs(n2)) {
-        return n1;
-    } else {
-        return n2;
-    }
+    return closest; // Return the final closest number
 }
-
 };
+
