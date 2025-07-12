@@ -472,3 +472,9 @@ int main() {
 // 34. Array	Minimum no. of operations required to make an array palindrome
 // 35. Array	Median of 2 sorted arrays of equal size
 // 36. Array	Median of 2 sorted arrays of different size
+
+
+
+
+
+hello 
