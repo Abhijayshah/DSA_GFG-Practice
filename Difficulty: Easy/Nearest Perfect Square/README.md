@@ -1,0 +1,7 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/are-you-perfect4926/1">Nearest Perfect Square</a></h2><h3>Difficulty Level : Difficulty: Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">Given an integer <strong>n</strong>, determine the <strong>nearest perfect square </strong>and compute the <strong>absolute difference </strong>between n and that perfect square."</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples: </strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>n = 25<br><strong>Output: </strong>[25, 0]
+<strong>Explanation: </strong>Since 25 is a perfect square, it is the closest perfect square to itself and absolute difference is 25 - 25 = 0</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>n = 86<br><strong>Output: </strong>[81, 5]
+<strong>Explanation:</strong>The closest perfect square to 86 is 81.Thus, the absolute difference between them is 86 - 81 = 5.</span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong><br>1<span style="color: #1e2229; font-family: Nunito; background-color: #ffffff;">≤&nbsp; </span><span style="color: #1e2229; font-family: Nunito; background-color: #ffffff;">n </span><span style="color: #1e2229; font-family: Nunito; background-color: #ffffff;">≤ </span>10<sup>9</sup></span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Mathematical</code>&nbsp;<code>Numbers</code>&nbsp;<code>Algorithms</code>&nbsp;
